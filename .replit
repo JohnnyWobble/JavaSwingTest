@@ -1,0 +1,2 @@
+language = "java_swing"
+run = "javac src/app/App.java && java src/app/App"
