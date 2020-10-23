@@ -1,8 +1,6 @@
 package app;
 
-import javafx.application.Application;
-
-public class UI extends Application {
+public class UI  {
     
     public UI() {
     }
