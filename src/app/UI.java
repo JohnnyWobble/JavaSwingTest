@@ -1,15 +1,18 @@
 package app;
 
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-import javax.swing.border.Border;
-import javax.swing.text.TextAction;
+import java.awt.BorderLayout;
+import java.awt.GridLayout;
+import java.awt.Font;
+import java.awt.Color;
 
-import app.UIWindowListener;
+import javax.swing.BorderFactory;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.border.Border;
 
 public class UI {
-    private Frame frame;
+    private JFrame frame;
     private JPanel gridPanel;
     private JLabel[][] tiles = new JLabel[3][3];
     private String turn = "X";
@@ -32,7 +35,7 @@ public class UI {
     }
 
     private void addWidgets() {
-        JLabel title = new JLabel("This is a demo of a tic tac toe game, it will probably have bugs", JLabel.CENTER);
+        JLabel title = new JLabel("This is a demo of a tic tac toe game", JLabel.CENTER);
         turnText = new JLabel("Turn: " + turn, JLabel.CENTER);
         gridPanel = new JPanel(new GridLayout(3, 3));
 
