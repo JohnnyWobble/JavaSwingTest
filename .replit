@@ -1,2 +1,2 @@
 language = "java_swing"
-run = "javac src/app/App.java && java -cp src app.App"
+run = "cd src && javac App.java && java App"
